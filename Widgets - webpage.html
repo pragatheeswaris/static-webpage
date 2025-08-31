@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple Static HTML Page</title>
+  <!-- This page uses only HTML tags (no CSS or JavaScript) -->
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Acme Widgets — Product Showcase</h1>
+    <p>Handcrafted widgets made with care. A demo static page using only HTML tags.</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main content -->
+  <main>
+    <!-- Hero / Introduction -->
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Acme Widgets has been producing fine mechanical widgets since 1990. We focus on durability, simple design, and reliable performance.</p>
+      <figure>
+        <!-- simple inline SVG illustration (valid HTML content) -->
+        <svg width="200" height="100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A stylized gear">
+          <title>Stylized Gear</title>
+          <rect x="0" y="0" width="200" height="100" fill="none" />
+          <circle cx="100" cy="50" r="20" fill="none" stroke="#000" />
+          <!-- eight teeth (simple lines) -->
+          <g stroke="#000">
+            <line x1="100" y1="5" x2="100" y2="20" />
+            <line x1="100" y1="95" x2="100" y2="80" />
+            <line x1="5" y1="50" x2="20" y2="50" />
+            <line x1="195" y1="50" x2="180" y2="50" />
+            <line x1="30" y1="20" x2="45" y2="35" />
+            <line x1="170" y1="80" x2="155" y2="65" />
+            <line x1="30" y1="80" x2="45" y2="65" />
+            <line x1="170" y1="20" x2="155" y2="35" />
+          </g>
+        </svg>
+        <figcaption>Our signature gear (illustration).</figcaption>
+      </figure>
+    </section>
+
+    <!-- Products list -->
+    <section id="products">
+      <h2>Products</h2>
+
+      <article>
+        <h3>Widget Alpha</h3>
+        <p>Compact, lightweight widget suitable for daily tasks.</p>
+        <ul>
+          <li>Size: small</li>
+          <li>Material: anodized aluminum</li>
+          <li>Warranty: 1 year</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Widget Beta</h3>
+        <p>Heavy-duty widget for industrial use.</p>
+        <ol>
+          <li>High torque</li>
+          <li>Corrosion resistant</li>
+          <li>5-year limited warranty</li>
+        </ol>
+      </article>
+
+      <!-- Simple product table -->
+      <table border="1" summary="Product comparison">
+        <caption>Quick comparison</caption>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Weight</th>
+            <th>Price (USD)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Widget Alpha</td>
+            <td>150 g</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>Widget Beta</td>
+            <td>850 g</td>
+            <td>95</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Features using semantic tags -->
+    <section id="features">
+      <h2>Key Features</h2>
+      <dl>
+        <dt>Durability</dt>
+        <dd>Tested to withstand repeated use in harsh conditions.</dd>
+        <dt>Serviceability</dt>
+        <dd>Parts are modular and easy to replace.</dd>
+        <dt>Sustainability</dt>
+        <dd>Made from recyclable materials when possible.</dd>
+      </dl>
+
+      <!-- Interactive-without-JS: details/summary -->
+      <details>
+        <summary>Manufacturing process (click to expand)</summary>
+        <p>Our process combines CNC machining, hand inspection, and final assembly. Each product goes through a three-stage QA check before shipping.</p>
+      </details>
+
+      <!-- Visual indicators available in HTML -->
+      <p>Production progress:</p>
+      <progress value="45" max="100">45%</progress>
+
+      <p>Battery health (example):</p>
+      <meter value="0.8" min="0" max="1">80%</meter>
+    </section>
+
+    <!-- Contact / Form -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>If you'd like a quote or sample, send us a message:</p>
+
+      <form method="post" action="#">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="product">Product of interest:</label><br>
+        <select id="product" name="product">
+          <option>Widget Alpha</option>
+          <option>Widget Beta</option>
+        </select><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Subscribe to updates</label><br><br>
+
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+      </form>
+    </section>
+  </main>
+
+  <!-- Aside for extra info -->
+  <aside>
+    <h2>News & Notes</h2>
+    <p>Open hours: Mon–Fri, 9am–5pm</p>
+    <p>Phone: +1 (555) 555-5555</p>
+  </aside>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Acme Widgets. All rights reserved.</p>
+    <p>Made with only HTML tags — no CSS or JavaScript.</p>
+  </footer>
+</body>
+</html>
